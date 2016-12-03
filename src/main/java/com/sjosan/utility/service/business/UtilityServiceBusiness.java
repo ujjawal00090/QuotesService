@@ -196,7 +196,7 @@ public class UtilityServiceBusiness {
 				fileContent = str;
 
 				fileContent = fileContent.replace("\u2060\u2060\u2060\u2060\u2060", "");
-				fileContent = fileContent.replace("\"", "");
+				fileContent = fileContent.replace("“", "");
 
 				String[] singleContents = fileContent.split(";;;");
 
