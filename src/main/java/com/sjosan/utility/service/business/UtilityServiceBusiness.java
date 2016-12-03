@@ -209,8 +209,9 @@ public class UtilityServiceBusiness {
 					content.setApproved(1);
 					s=StringEscapeUtils.escapeSql(singleContent);
 					session.save(content);
-					++count;
+					
 				}
+				++count;
 
 			}
 
