@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.sjosan.utility.service.entity.Content" table="content">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+
+		<property name="categoryID"></property>
+		<property name="approved"></property>
+		<property name="submittedBy"></property>
+		<property name="contentText"></property>
+
+	</class>
+
+</hibernate-mapping>  
