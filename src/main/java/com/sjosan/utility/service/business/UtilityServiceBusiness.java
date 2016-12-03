@@ -208,7 +208,9 @@ public class UtilityServiceBusiness {
 					content.setSubmittedBy("ADMIN");
 					content.setApproved(1);
 					s=StringEscapeUtils.escapeSql(singleContent);
-					session.save(content);
+					if(content.getContentText().length()<=1000){
+						session.save(content);
+					}
 					
 				}
 				++count;
@@ -223,7 +225,7 @@ public class UtilityServiceBusiness {
 
 			logger.error("saveData", e);
 			payload.setResponseStatus(false);
-			payload.setResponseMessage("OOPS! Something went wrong."+count+s+e);
+			payload.setResponseMessage("OOPS! Something went wrong."+count+s+e.getMessage());
 		} finally {
 			session.close();
 		}
