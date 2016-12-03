@@ -220,7 +220,7 @@ public class UtilityServiceBusiness {
 
 			logger.error("saveData", e);
 			payload.setResponseStatus(false);
-			payload.setResponseMessage("OOPS! Something went wrong.");
+			payload.setResponseMessage("OOPS! Something went wrong."+e);
 		} finally {
 			session.close();
 		}
