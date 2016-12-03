@@ -127,44 +127,44 @@ public class UtilityServiceBusiness {
 		ArrayList<Likes> listOfFiles = new ArrayList<Likes>();
 
 		Likes l = new Likes();
-		l.setName("Age");
+		l.setName("Age Quotes");
 		l.setId(1);
 		l.setUrl("https://www.dropbox.com/s/o4oapvwwx1frdnz/age.txt?dl=1");
 		listOfFiles.add(l);
 		
 		l = new Likes();
-		l.setName("Inspirational");
+		l.setName("Inspirational Thoughts");
 		l.setId(1);
 		l.setUrl("https://www.dropbox.com/s/hr2rj92e92r8ull/inspirational.txt?dl=1");
 		listOfFiles.add(l);
 		
 		l = new Likes();
-		l.setName("Life");
+		l.setName("Life Quotes");
 		l.setId(1);
 		l.setUrl("https://www.dropbox.com/s/fxqv2igc3s9me8q/life.txt?dl=1");
 		listOfFiles.add(l);
 		
 		l = new Likes();
 		l.setId(1);
-		l.setName("Love");
+		l.setName("Love Quotes");
 		l.setUrl("https://www.dropbox.com/s/5dj2nbs6hnjvdlo/love.txt?dl=1");
 		listOfFiles.add(l);
 		
 		l = new Likes();
 		l.setId(1);
-		l.setName("Motivational");
+		l.setName("Motivational Thoughts");
 		l.setUrl("https://www.dropbox.com/s/8qxquy0rsdywt0u/Motivational.txt?dl=1");
 		listOfFiles.add(l);
 		
 		l = new Likes();
 		l.setId(1);
-		l.setName("Positive");
+		l.setName("Positive Vibes");
 		l.setUrl("https://www.dropbox.com/s/gantdkxuhp7wsqp/positive.txt?dl=1");
 		listOfFiles.add(l);
 		
 		l = new Likes();
 		l.setId(1);
-		l.setName("Success");
+		l.setName("Success Quotes");
 		l.setUrl("https://www.dropbox.com/s/s016ogpkp9qvvai/Success.txt?dl=1");
 		listOfFiles.add(l);
 		int count=0;
