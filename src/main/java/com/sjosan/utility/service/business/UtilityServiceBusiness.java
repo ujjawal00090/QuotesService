@@ -167,7 +167,9 @@ public class UtilityServiceBusiness {
 		l.setName("Success");
 		l.setUrl("https://www.dropbox.com/s/s016ogpkp9qvvai/Success.txt?dl=1");
 		listOfFiles.add(l);
+		int count=0;
 		
+		String s="";
 		
 		try {
 
@@ -205,9 +207,9 @@ public class UtilityServiceBusiness {
 					content.setCategoryID((int) cat.getId());
 					content.setSubmittedBy("ADMIN");
 					content.setApproved(1);
-
+					s=StringEscapeUtils.escapeSql(singleContent);
 					session.save(content);
-
+					++count;
 				}
 
 			}
@@ -220,7 +222,7 @@ public class UtilityServiceBusiness {
 
 			logger.error("saveData", e);
 			payload.setResponseStatus(false);
-			payload.setResponseMessage("OOPS! Something went wrong."+e);
+			payload.setResponseMessage("OOPS! Something went wrong."+count+s+e);
 		} finally {
 			session.close();
 		}
