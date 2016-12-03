@@ -12,9 +12,9 @@
 		<property name="hibernate.connection.password">root</property>
 		<property name="hibernate.show_sql">true</property>  --> 
 		
-		<property name="hibernate.connection.url">jdbc:mysql://10.1.17.16:3306/shayaridb?autoReconnect=true&amp;useUnicode=true&amp;createDatabaseIfNotExist=true&amp;characterEncoding=utf-8</property>
-		<property name="hibernate.connection.username">shayariuser</property>
-		<property name="hibernate.connection.password">shayaripassword</property>
+		<property name="hibernate.connection.url">jdbc:mysql://10.1.75.12:3306/quotedb?autoReconnect=true&amp;useUnicode=true&amp;createDatabaseIfNotExist=true&amp;characterEncoding=utf-8</property>
+		<property name="hibernate.connection.username">quoteuser</property>
+		<property name="hibernate.connection.password">quotepassword</property>
 		<property name="hibernate.connection.CharSet">utf8</property>
         <property name="hibernate.connection.characterEncoding">utf8</property>
         <property name="hibernate.connection.useUnicode">true</property>
